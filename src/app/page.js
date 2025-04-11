@@ -8,7 +8,7 @@ export default function Landing() {
   const router = useRouter();
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-c1 to-c2 text-white">
+    <div className="min-h-screen bg-gradient-to-t from-headingcolor to-c4 text-white">
       <nav className="top-0 left-0 flex justify-between items-center px-2 pt-2 -mb-10">
         <div className="flex items-center gap-2">
           <Brain className="w-8 h-8 text-purple-500" />
@@ -53,7 +53,7 @@ export default function Landing() {
             <div className="w-12 h-12 bg-purple-500/20 rounded-lg flex items-center justify-center mx-auto mb-4">
               <Brain className="w-6 h-6 text-purple-500" />
             </div>
-            <h3 className="text-xl font-semibold text-headingcolor mb-2">
+            <h3 className="text-xl font-semibold text-c4 mb-2">
               Track Your Mood
             </h3>
             <p className="text-descriptioncolor">
@@ -64,7 +64,7 @@ export default function Landing() {
             <div className="w-12 h-12 bg-purple-500/20 rounded-lg flex items-center justify-center mx-auto mb-4">
               <Heart className="w-6 h-6 text-purple-500" />
             </div>
-            <h3 className="text-xl font-semibold text-headingcolor mb-2">
+            <h3 className="text-xl font-semibold text-c4 mb-2">
               Professional Support
             </h3>
             <p className="text-subheadingcolor">
@@ -75,7 +75,7 @@ export default function Landing() {
             <div className="w-12 h-12 bg-purple-500/20 rounded-lg flex items-center justify-center mx-auto mb-4">
               <Shield className="w-6 h-6 text-purple-500" />
             </div>
-            <h3 className="text-xl font-semibold text-headingcolor mb-2">
+            <h3 className="text-xl font-semibold text-c4 mb-2">
               Private & Secure
             </h3>
             <p className="text-subheadingcolor">
