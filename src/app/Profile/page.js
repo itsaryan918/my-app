@@ -20,6 +20,7 @@ import {
   Target,
 } from "lucide-react";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 const moodData = [
   { day: "Mon", mood: 4 },
@@ -111,12 +112,11 @@ export default function Profile() {
           <Card className="p-6">
             <div className="flex justify-between items-center mb-6">
               <h2 className="text-2xl font-semibold">Journal Entries</h2>
-              <Link href="/Journel">
-                <Button>
+                <Button onclick={()=>router.push('/Journal')} variant="outline" size="sm">
                   <Edit className="mr-2 h-4 w-4" />
                   New Entry
                 </Button>
-              </Link>
+              
             </div>
             <div className="space-y-4">
               {journalEntries.map((entry, index) => (
