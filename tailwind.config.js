@@ -1,9 +1,20 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [],
+  content: [
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/**/*.{js,ts,jsx,tsx,mdx}",
+  ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        c1: "#CB9DF0", // deepest color, use for headings and subheadings
+        c2: "#F0C1E1", // use for text
+        c3: "#FDDBBB", // use for backgrounds
+        c4: "#FFF9BF", // lightest color
+      },
+    },
   },
   plugins: [],
-}
-
+};
